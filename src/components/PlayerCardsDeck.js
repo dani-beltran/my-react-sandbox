@@ -1,17 +1,15 @@
-import * as React from "react";
+import React from "react";
 import PlayerCard from './PlayerCard.js';
 import Box from '@mui/material/Box';
 
-export default class PlayerCardsDeck extends React.Component {
-  cardStyle = {
+export default function PlayerCardsDeck(props) {
+  const { sx } = props;
+  const cardStyle = {
     mr: '10px',
     mb: '10px',
     maxWidth: 300
   };
-  
-  render() {
-    const { sx } = this.props;
-    return (
+  return (
     <Box
         sx={{
           display: 'flex',
@@ -27,7 +25,7 @@ export default class PlayerCardsDeck extends React.Component {
           player_known_name="negro" 
           player_birthday="01/01/1987"
           country_name="Portugal"
-          sx={this.cardStyle}
+          sx={cardStyle}
           ></PlayerCard>
           <PlayerCard 
           player_name="Sergio Ramos" 
@@ -35,9 +33,8 @@ export default class PlayerCardsDeck extends React.Component {
           player_known_name="pichichi" 
           player_birthday="01/01/1987"
           country_name="Spain"
-          sx={this.cardStyle}
+          sx={cardStyle}
           ></PlayerCard>
       </Box>  
     );
   }
-}
