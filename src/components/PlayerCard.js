@@ -9,13 +9,14 @@ import Typography from '@mui/material/Typography';
 
 export default class PlayerCard extends React.Component {
   render() {
+    const { sx } = this.props;
     return (
       <div className="PlayerCard">
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{...sx }}>
           <CardMedia
             component="img"
-            height="140"
-            image="https://picsum.photos/200/300"
+            height="300"
+            image={this.props.player_image}
             alt={this.props.player_name}
           />
           <CardContent>
