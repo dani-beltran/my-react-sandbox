@@ -4,8 +4,8 @@ import Box from '@mui/material/Box';
 
 export default class PlayerCardsDeck extends React.Component {
   cardStyle = {
-    mr: 2,
-    mb: 2,
+    mr: '10px',
+    mb: '10px',
     maxWidth: 300
   };
   
