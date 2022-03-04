@@ -18,7 +18,7 @@ export default function PlayerCard(props) {
         flipOnClick={false}
         isFlipped={isFlipped}
         flipDirection="horizontal"
-        style={{ "margin-bottom": sx.mb, "margin-right": sx.mr }}
+        style={{ marginBottom: sx.mb, marginRight: sx.mr }}
       >
         <FrontSide style={{ ...sideStyle }}>
           <Card sx={{ maxWidth: sx.maxWidth, boxShadow: 0 }}>
